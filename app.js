@@ -154,7 +154,6 @@ app.post("/login", function(req, res){
 
 
 
-app.listen(3000, function(){
-    console.log("server is started on port 3000");
-
-});
+app.listen(process.env.PORT || 3000, function () {
+    console.log("server is started at port 3000");
+  });
